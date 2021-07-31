@@ -1,0 +1,12 @@
+Base path: 'C:/Users/Mertcan/Documents/GitHub/2019.4.22f1/Editor/Data', plugins path 'C:/Users/Mertcan/Documents/GitHub/2019.4.22f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: preprocess
+  insize=2560 outsize=1747 ok=1
+Cmd: preprocess
+  insize=10724 outsize=7078 ok=1
+Cmd: preprocess
+  insize=10810 outsize=7076 ok=1
+Cmd: preprocess
+  insize=11656 outsize=7520 ok=1
+Cmd: preprocess
+  insize=11643 outsize=7556 ok=1
