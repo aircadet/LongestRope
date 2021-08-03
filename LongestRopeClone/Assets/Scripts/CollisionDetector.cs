@@ -44,7 +44,6 @@ public class CollisionDetector : MonoBehaviour
 
         if (transform.tag == "Finish") 
         {
-            Debug.Log(other.tag + "Kazandı Ustaaa");
             FindObjectOfType<GameManager>().playerState = GameManager.PlayerState.Finish;
             FindObjectOfType<UIManager>().winnerText.text = (other.tag + " is Winner!!");
         }

@@ -16,8 +16,8 @@ public class StickCreater : MonoBehaviour
     Vector3 startPos = new Vector3(-4.17f, -0.876f, -7.444f);
     Vector3 startPos2 = new Vector3(-4.17f, -0.876f, -7.444f);
     [Header("DISTANCE BETWEEN TWO STICK")]
-    [SerializeField] Vector3 xPlusPos = new Vector3(1.2f, 0, 0);
-    [SerializeField] Vector3 zPlusPos = new Vector3(0, 0, 1.15f);
+    [SerializeField] Vector3 xPlusPos = new Vector3(1f, 0, 0);
+    [SerializeField] Vector3 zPlusPos = new Vector3(0, 0, 1f);
 
     ///////////////////////////////////////////////
     public static StickCreater instance;
@@ -64,7 +64,7 @@ public class StickCreater : MonoBehaviour
    IEnumerator AfterCollectSpawn(Vector3 pos) 
    {
         yield return new WaitForSeconds(1);
-        int randomNum = Random.Range(0, 4);
+        int randomNum = Random.Range(0, prefabs.Count);
         Instantiate(prefabs[randomNum], pos, Quaternion.identity, GameObject.Find("Stick Holder").transform);
 
     }
