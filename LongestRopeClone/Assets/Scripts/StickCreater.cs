@@ -15,17 +15,11 @@ public class StickCreater : MonoBehaviour
     // SPAWNING VARIABLES //
     Vector3 startPos = new Vector3(-4.17f, -0.876f, -7.444f);
     Vector3 startPos2 = new Vector3(-4.17f, -0.876f, -7.444f);
-
-    Vector3 xPlusPos = new Vector3(1.2f, 0, 0);
-    Vector3 zPlusPos = new Vector3(0, 0, 1.15f);
+    [Header("DISTANCE BETWEEN TWO STICK")]
+    [SerializeField] Vector3 xPlusPos = new Vector3(1.2f, 0, 0);
+    [SerializeField] Vector3 zPlusPos = new Vector3(0, 0, 1.15f);
 
     ///////////////////////////////////////////////
-
-    [Header("COLLECTED OBJ'S POSITIONS")]
-    public List<Vector3> collectedPositions;
-
-
-
     public static StickCreater instance;
 
     private void Awake()
@@ -51,7 +45,7 @@ public class StickCreater : MonoBehaviour
                 {
                     if (antiPos == startPos2) { startPos2 += xPlusPos; }
                 }
-                int randomNum = Random.Range(0, 4);
+                int randomNum = Random.Range(0, prefabs.Count);
 
                 Instantiate(prefabs[randomNum], startPos2, Quaternion.identity, GameObject.Find("Stick Holder").transform);
 

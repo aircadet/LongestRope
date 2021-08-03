@@ -14,6 +14,17 @@ public class GameManager : MonoBehaviour
         Finish
     }
 
+    private void Update()
+    {
+        if (playerState == PlayerState.Playing)
+        {
+            Time.timeScale = 1;
+        }
+        else 
+        {
+            Time.timeScale = 0;
+        }
+    }
     private void Start()
     {
         playerState = PlayerState.Preparing;

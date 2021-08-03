@@ -926,10 +926,10 @@
       <HintPath>C:/Users/Mertcan/Documents/GitHub/2019.4.22f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Mertcan/Documents/GitHub/LongestRopeClone/LongestRopeClone/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Mertcan/Documents/GitHub/LongestRope/LongestRopeClone/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Mertcan/Documents/GitHub/LongestRopeClone/LongestRopeClone/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Mertcan/Documents/GitHub/LongestRope/LongestRopeClone/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
