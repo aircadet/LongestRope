@@ -20,12 +20,13 @@ public class EnemyController : MonoBehaviour
     [SerializeField] int possibility;
 
     NavMeshAgent agent;
-    public EnemyController instance;
+    public static EnemyController _instance;
 
     private void Awake()
     {
+        if (_instance == null) { _instance = this; }
         agent = GetComponent<NavMeshAgent>();
-        if (instance == null) { instance = this; }
+        
     }
 
     private void Start()
